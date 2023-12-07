@@ -31,7 +31,7 @@ class Day3 extends Day {
         const row = grid[y].substring(startIx, endIx + 1)
         rows.push(row)
 
-        if (y < grid.length) {
+        if (y < grid.length -1) {
             const row = grid[y + 1].substring(startIx, endIx + 1)
             rows.push(row)
         }
