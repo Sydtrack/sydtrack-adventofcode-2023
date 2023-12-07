@@ -10,7 +10,7 @@
     "start": "npm run build && node build/index.js"
   },
   "author": "Alberto Wagner",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^27.0.3",
     "@types/node": "^16.11.10",
