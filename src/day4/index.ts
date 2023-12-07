@@ -35,7 +35,7 @@ class Day4 extends Day {
 
     solveForPartTwo(input: string): string {
         const lines = input.split('\n');
-        const won = new Array(lines.length - 1).fill(1)
+        const won = new Array(lines.length).fill(1)
 
         for (const [ix, line] of lines.entries()) {
             if (!line) continue
@@ -61,7 +61,6 @@ class Day4 extends Day {
         let sum = 0;
         won.forEach((n) => sum += parseInt(n))
 
-        console.log(won)
         return String(sum);
     }
 }
