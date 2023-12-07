@@ -1,7 +1,7 @@
 {
-  "name": "adventofcode-typescript-starter",
+  "name": "sydtrack-adventofcode-2023",
   "version": "1.0.0",
-  "description": "https://adventofcode.com/",
+  "description": "Code for my 2023 Advent of Code challenge: https://adventofcode.com/ Template based on adventofcode-typescript-starter by Loris Bognanni",
   "main": "src/index.ts",
   "scripts": {
     "build": "rimraf ./build && tsc",
@@ -9,7 +9,7 @@
     "setup": "node src/setup.js",
     "start": "npm run build && node build/index.js"
   },
-  "author": "Loris Bognanni",
+  "author": "Alberto Wagner",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^27.0.3",
