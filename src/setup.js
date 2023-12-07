@@ -15,7 +15,7 @@ if (day < 1 || day > 25) {
 const startPath = process.cwd();
 
 (async function () {
-  
+
   console.log("\n\n\n  🎄 ADVENT OF CODE 🎄 \n\n");
   console.log(`🎁 Setting up day ${day}`);
   await createInputFiles();
@@ -55,8 +55,28 @@ async function createInputFiles() {
   );
 
   createFileWithContentIfItDoesntExist(
+    path.join(inputDayPath, "part1-sample.txt"),
+    `{visit https://adventofcode.com/${year}/day/${day} and paste the part 1 sample here}`
+  );
+
+  createFileWithContentIfItDoesntExist(
+    path.join(inputDayPath, "part1-sample-result.txt"),
+    `{visit https://adventofcode.com/${year}/day/${day} and paste the part 1 sample result here}`
+  );
+
+  createFileWithContentIfItDoesntExist(
     path.join(inputDayPath, "part2.txt"),
     `{After completing day 1, visit https://adventofcode.com/${year}/day/${day} and paste the part 2 input here}`
+  );
+
+  createFileWithContentIfItDoesntExist(
+    path.join(inputDayPath, "part2-sample.txt"),
+    `{After completing day 1, visit https://adventofcode.com/${year}/day/${day} and paste the part 2 sample here}`
+  );
+
+  createFileWithContentIfItDoesntExist(
+    path.join(inputDayPath, "part2-sample-result.txt"),
+    `{After completing day 1, visit https://adventofcode.com/${year}/day/${day} and paste the part 2 sample result here}`
   );
 }
 
